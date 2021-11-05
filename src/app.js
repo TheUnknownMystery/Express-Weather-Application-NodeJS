@@ -178,8 +178,6 @@ app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
     name: "Sauhardo Sengupta",
-    help_text: `To get help all you have to do is email
-  us at sauhardo2007@gmail.com`,
   });
 });
 
