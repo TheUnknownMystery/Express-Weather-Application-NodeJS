@@ -7,7 +7,10 @@ const messageTwo = document.querySelector("#message-2");
 
 form.addEventListener("click", () => {
   const location = input.value;
-  const url = `http://localhost:3000/weather?address=${location}`;
+  //WHEN IN PRODUCTION DO ONT USE THIS AS IT WILL NOT WORK
+  //const url = `http://localhost:3000/weather?address=${location}`;
+
+  const url = `/weather?address=${location}`;
   messageOne.textContent = "loading....";
 
   fetch(url).then((res) => {
