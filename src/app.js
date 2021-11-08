@@ -206,9 +206,9 @@ app.get("/weather", (req, res) => {
         }
 
         const { temp, cloudcover, placename } = f_res;
-        console.log(
-          `temparature: ${temp}, cloudcover: ${cloudcover} ${placename}`
-        );
+        // console.log(
+        //   `temparature: ${temp}, cloudcover: ${cloudcover} ${placename}`
+        // );
 
         res.send([
           {
@@ -270,8 +270,9 @@ app.get("/products", (req, res) => {
 //404 for help specific error
 app.get("/help/*", (req, res) => {
   res.render("Error", {
-    ErrorMessage: "404 Error Page Help Data Not Found",
-    ErrorParagraph: "help article not found",
+    ErrorMessage: "404 Error Help Page Not Found",
+    ErrorParagraph: "No Help Article Found Please Try Again",
+    name: "SauhardoSengupta",
   });
 });
 
@@ -280,7 +281,8 @@ app.get("*", (req, res) => {
   res.render("Error", {
     ErrorMessage: "404 Error Page Not Found",
     ErrorParagraph:
-      "Look like the page you were searching for is no availabel now!",
+      "Look like the page you were searching for is not availabel now!",
+    name: "SauhardoSengupta",
   });
 });
 

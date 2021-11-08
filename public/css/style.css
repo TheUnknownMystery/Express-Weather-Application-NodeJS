@@ -30,7 +30,7 @@ body {
 }
 
 #location {
-  width: 500px;
+  width: 50%;
   height: 40px;
 
   margin-top: 56px;
@@ -83,4 +83,14 @@ img {
   margin-top: 20px;
   width: 190px;
   height: 190px;
+}
+
+#ErrorMessage {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 34px;
+  color: rgb(80, 80, 80);
+}
+
+#ErrorParagraph {
+  font-family: sans-serif;
 }
