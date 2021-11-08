@@ -33,21 +33,25 @@ body {
   width: 500px;
   height: 40px;
 
-  margin-top: 50px;
+  margin-top: 56px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 18px;
   padding-left: 10px;
+
+  border-radius: 10px;
 }
 
 #Search {
-  height: 50px;
+  height: 53px;
   width: 100px;
 
   cursor: pointer;
   border-width: 0px;
   color: aliceblue;
-  background-color: #8888;
+  background-color: rgba(65, 65, 65, 0.533);
+
+  border-radius: 14px;
 }
 
 #footer {
