@@ -24,7 +24,10 @@ form.addEventListener("click", () => {
         return;
       }
       //console.log(res_json[0]);
-      messageOne.textContent = `Name: ${res_json[0].placename} and temparature ${res_json[0].temparature} degree celcius`;
+      messageOne.textContent = `
+      Name: ${res_json[0].placename} and temparature ${res_json[0].temparature} degree celcius.
+      Its ${res_json[0].weather_description} Today
+      `;
     });
   });
 });

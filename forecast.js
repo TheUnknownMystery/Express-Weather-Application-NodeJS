@@ -21,11 +21,15 @@ const weather_forecast = (lat, lon, placename, callback) => {
       if (response.success != false) {
         //const weather_data = response.body.current
         const { temperature, cloudcover } = body.current;
+        const weather_description = body.current.weather_descriptions[0];
+        const { is_day } = body.current;
 
         callback(undefined, {
           temp: temperature,
           cloudcover: cloudcover,
           placename: placename,
+          weather_description: weather_description,
+          is_day: is_day,
         });
       } else {
         const { type } = body.error;

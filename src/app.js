@@ -201,11 +201,12 @@ app.get("/weather", (req, res) => {
 
       forecast(latitude, longitude, placename, (f_err, f_res) => {
         if (f_err) {
-          console.log("ee", f_err);
+          console.log(f_err);
           return;
         }
 
-        const { temp, cloudcover, placename } = f_res;
+        const { temp, cloudcover, placename, weather_description, is_day } =
+          f_res;
         // console.log(
         //   `temparature: ${temp}, cloudcover: ${cloudcover} ${placename}`
         // );
@@ -216,6 +217,8 @@ app.get("/weather", (req, res) => {
             placename: placename,
             temparature: temp,
             cloudcover: cloudcover,
+            weather_description: weather_description,
+            is_day: is_day,
           },
         ]);
       });
