@@ -250,11 +250,11 @@ app.get("/products", (req, res) => {
  */
 
   //here we are getting all the query
-  console.log(req.query);
+  //console.log(req.query);
   //here we are getting the value
   //of the search parameter
   //from the json data
-  console.log(req.query.search);
+  //console.log(req.query.search);
 
   res.send({
     products: [],
@@ -289,6 +289,7 @@ app.get("*", (req, res) => {
 //app.com
 //app.com/help
 //app.com/about
+
 const PORT = process.env.PORT || 3000;
 //start server
 app.listen(PORT, () => {
