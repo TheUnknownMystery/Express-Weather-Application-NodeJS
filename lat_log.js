@@ -8,7 +8,6 @@ const geocode = (address, callback) => {
   const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=${encodeURIComponent(
     access_token
   )}&limit=1`;
-  //console.log(url)
 
   request({ url: url, json: true }, (error, response) => {
     if (error) {
@@ -23,12 +22,12 @@ const geocode = (address, callback) => {
       } else {
         const lat = features[0].center[1];
         const lon = features[0].center[0];
-        const placename = features[0].place_name;
+        const { place_name } = features[0];
 
         callback(undefined, {
           latitude: lat,
           longitude: lon,
-          placename: placename,
+          placename: place_name,
         });
       }
     }

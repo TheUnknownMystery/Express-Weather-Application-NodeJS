@@ -1,9 +1,6 @@
 const request = require("postman-request");
 
 const weather_forecast = (lat, lon, placename, callback) => {
-  lat = Number(lat);
-  lon = Number(lon);
-
   //api key to prove that we are authenticated
   const api_key = "9da35aeb64a7778a52ad7a360ff9455c";
   //url for accesing data
