@@ -4,6 +4,10 @@ and modifie data and use them for backend or
 we can also create websites and use node js as 
 a back end for it*/
 
+//dev dependencies are modules that are
+//dependencies that you only need to
+// install in you local machine for dev
+
 /*throught this we can build apis and web project
 for fetching add or getting data*/
 
